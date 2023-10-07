@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Songs</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Songs</h2>
+        <div class="row">
+            <div class="col-12 mb-3">
+                <form method="get" action="/api/songs/search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for songs by name or genre" name="q">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="submit">Search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Artist</th>
+                            <th>Genre</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Loop through all songs and display them in the table -->
+                        <!-- list songs as song -->
+                        <tr>
+                            <td>${song.name}</td>
+                            <td>${song.artist}</td>
+                            <td>${song.genre}</td>
+                            <td>
+                                <button type="button" class="btn btn-primary play-pause-btn" data-id="${song.id}">Play/Pause</button>
+                                <button type="button" class="btn btn-secondary add-to-playlist-btn" data-id="${song.id}">Add to Playlist</button>
+                            </td>
+                        </tr>
+                        <!-- </#list> -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="../static/js/main.js"></script>
+</body>
+</html>

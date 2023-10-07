@@ -1,0 +1,115 @@
+/* Add custom styles here */
+
+/* Style for the navbar */
+.navbar {
+    background-color: #343a40;
+}
+
+/* Style for the logo in the navbar */
+.navbar-brand {
+    color: #ffffff;
+}
+
+/* Style for links in the navbar */
+.navbar-nav li a {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+/* Style for the active link in the navbar */
+.navbar-nav li.active a {
+    color: #f5d742;
+}
+
+/* Style for the jumbotron */
+.jumbotron {
+    background-color: #f5d742;
+    color: #ffffff;
+    padding: 100px;
+    margin-bottom: 0;
+}
+
+/* Style for the header text in the jumbotron */
+.jumbotron h1 {
+    font-size: 72px;
+}
+
+/* Style for the paragraph text in the jumbotron */
+.jumbotron p {
+    font-size: 24px;
+}
+
+/* Style for the footer */
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 30px;
+}
+
+/* Style for the header text in the footer */
+.footer h5 {
+    font-size: 18px;
+}
+
+/* Style for the paragraph text in the footer */
+.footer p {
+    font-size: 14px;
+}
+
+/* Style for the page content */
+.content {
+    padding: 30px;
+}
+
+/* Style for the page title */
+.page-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* Style for the button */
+.btn {
+    background-color: #343a40;
+    border-color: #343a40;
+    color: #ffffff;
+}
+
+/* Style for the button on hover */
+.btn:hover {
+    background-color: #f5d742;
+    border-color: #f5d742;
+    color: #343a40;
+}
+
+/* Style for the form input */
+.form-control {
+    border-radius: 0;
+    border-color: #343a40;
+}
+
+/* Style for the form input on focus */
+.form-control:focus {
+    box-shadow: none;
+    border-color: #f5d742;
+}
+
+/* Style for the table */
+.table {
+    margin-bottom: 30px;
+}
+
+/* Style for the table header */
+.table thead th {
+    font-weight: bold;
+    background-color: #f5d742;
+}
+
+/* Style for the table row on hover */
+.table tbody tr:hover {
+    background-color: #f5d742;
+}
+
+/* Style for the table cell */
+.table td, .table th {
+    border: none;
+}
